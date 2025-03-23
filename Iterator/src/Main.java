@@ -7,6 +7,7 @@ public class Main {
         bookShelf.appendBook(new Book("Bible"));
         bookShelf.appendBook(new Book("Cinderella"));
         bookShelf.appendBook(new Book("Daddy-Long-Legs"));
+        bookShelf.appendBook(new Book("Final Book"));
 
         // 명시적으로 Iterator를 사용하는 방법
         Iterator<Book> it = bookShelf.iterator();
