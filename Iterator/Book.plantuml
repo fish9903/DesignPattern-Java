@@ -1,0 +1,15 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Book
+class BookShelf
+class BookShelfIterator
+
+BookShelf         "1" *-[#595959,plain]-> "books\n*" Book              
+BookShelf          -[#595959,dashed]->  Book              : "«create»"
+BookShelf          -[#595959,dashed]->  BookShelfIterator : "«create»"
+BookShelfIterator "1" *-[#595959,plain]-> "bookShelf\n1" BookShelf         
+@enduml
